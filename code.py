@@ -12,7 +12,7 @@ Created on Tue Dec 26 16:03:33 2017
 def getMaxFontSize(line):
     height, width = int(line[1]), int(line[0])  # extract height, width...
     sliceObj = slice(2, len(line))
-    words = line[sliceObj]                      #... and the words."
+    words = line[sliceObj]                      #... and the words.
     
     nb, prev, size = -1, 0, 0
     # prev is a trick to save the number of lines in case of getNbOfLines returning 0 (doesn't fit)
